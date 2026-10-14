@@ -23,9 +23,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-  <!-- Font Awesome (ícone do WhatsApp) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
   <link rel="stylesheet" href="static/css/site.css">
 
 </head>
@@ -215,16 +212,14 @@
 
 <section id="contato" class="section section--contact">
   <div class="container">
-    <h2 class="h2">Vamos calcular seu potencial</h2>
-
-    <div class="contact__actions">
-      <a class="btn btn--whatsapp"
-         href="https://wa.me/5535988857323?text=Ol%C3%A1%2C%20quero%20uma%20estimativa%20de%20cr%C3%A9dito%20de%20carbono%20para%20minha%20propriedade."
-         target="_blank" rel="noopener noreferrer">
-        <svg class="btn__icon" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
-          <path d="M19.11 17.53c-.29-.14-1.69-.83-1.95-.92-.26-.1-.45-.14-.64.14-.19.29-.73.92-.9 1.11-.16.19-.33.21-.62.07-.29-.14-1.21-.45-2.31-1.42-.86-.76-1.44-1.7-1.61-1.99-.16-.29-.02-.45.12-.59.13-.13.29-.33.43-.5.14-.17.19-.29.29-.48.1-.19.05-.36-.02-.5-.07-.14-.64-1.54-.88-2.11-.23-.55-.47-.48-.64-.49l-.55-.01c-.19 0-.5.07-.76.36-.26.29-1 1-1 2.44s1.03 2.83 1.17 3.02c.14.19 2.02 3.09 4.89 4.33.68.29 1.2.46 1.61.59.68.22 1.29.19 1.78.12.54-.08 1.69-.69 1.93-1.35.24-.66.24-1.23.17-1.35-.07-.12-.26-.19-.55-.33z"/>
-          <path d="M16.02 3C8.84 3 3 8.84 3 16c0 2.53.75 4.99 2.17 7.1L4 29l6.08-1.6A12.9 12.9 0 0 0 16.02 29C23.2 29 29 23.16 29 16S23.2 3 16.02 3zm0 23.52c-2.07 0-4.1-.55-5.88-1.6l-.42-.25-3.61.95.96-3.52-.27-.45A10.55 10.55 0 0 1 5.47 16c0-5.82 4.74-10.55 10.55-10.55S26.57 10.18 26.57 16 21.84 26.52 16.02 26.52z"/>
-        </svg>
+    <div class="contact-card">
+      <div class="contact-card__text">
+        <h2 class="h2">Vamos calcular seu potencial</h2>
+        <p class="contact-card__lead">Fale com a nossa equipe pelo WhatsApp e tire suas dúvidas sobre o potencial de crédito de carbono da sua propriedade.</p>
+      </div>
+      <a class="btn-wa" href="https://wa.me/5535988857323?text=Ol%C3%A1%2C%20quero%20uma%20estimativa%20de%20cr%C3%A9dito%20de%20carbono%20para%20minha%20propriedade." target="_blank" rel="noopener noreferrer">
+        <svg class="btn-wa__icon" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M19.11 17.53c-.29-.14-1.69-.83-1.95-.92-.26-.1-.45-.14-.64.14-.19.29-.73.92-.9 1.11-.16.19-.33.21-.62.07-.29-.14-1.21-.45-2.31-1.42-.86-.76-1.44-1.7-1.61-1.99-.16-.29-.02-.45.12-.59.13-.13.29-.33.43-.5.14-.17.19-.29.29-.48.1-.19.05-.36-.02-.5-.07-.14-.64-1.54-.88-2.11-.23-.55-.47-.48-.64-.49l-.55-.01c-.19 0-.5.07-.76.36-.26.29-1 1-1 2.44s1.03 2.83 1.17 3.02c.14.19 2.02 3.09 4.89 4.33.68.29 1.2.46 1.61.59.68.22 1.29.19 1.78.12.54-.08 1.69-.69 1.93-1.35.24-.66.24-1.23.17-1.35-.07-.12-.26-.19-.55-.33z"/>
+          <path d="M16.02 3C8.84 3 3 8.84 3 16c0 2.53.75 4.99 2.17 7.1L4 29l6.08-1.6A12.9 12.9 0 0 0 16.02 29C23.2 29 29 23.16 29 16S23.2 3 16.02 3zm0 23.52c-2.07 0-4.1-.55-5.88-1.6l-.42-.25-3.61.95.96-3.52-.27-.45A10.55 10.55 0 0 1 5.47 16c0-5.82 4.74-10.55 10.55-10.55S26.57 10.18 26.57 16 21.84 26.52 16.02 26.52z"/></svg>
         <span>Falar no WhatsApp</span>
       </a>
     </div>
@@ -253,7 +248,8 @@
     title="Falar no WhatsApp"
   >
     <span class="sr-only">Falar no WhatsApp</span>
-    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+    <svg class="whatsapp-float__icon" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M19.11 17.53c-.29-.14-1.69-.83-1.95-.92-.26-.1-.45-.14-.64.14-.19.29-.73.92-.9 1.11-.16.19-.33.21-.62.07-.29-.14-1.21-.45-2.31-1.42-.86-.76-1.44-1.7-1.61-1.99-.16-.29-.02-.45.12-.59.13-.13.29-.33.43-.5.14-.17.19-.29.29-.48.1-.19.05-.36-.02-.5-.07-.14-.64-1.54-.88-2.11-.23-.55-.47-.48-.64-.49l-.55-.01c-.19 0-.5.07-.76.36-.26.29-1 1-1 2.44s1.03 2.83 1.17 3.02c.14.19 2.02 3.09 4.89 4.33.68.29 1.2.46 1.61.59.68.22 1.29.19 1.78.12.54-.08 1.69-.69 1.93-1.35.24-.66.24-1.23.17-1.35-.07-.12-.26-.19-.55-.33z"/>
+          <path d="M16.02 3C8.84 3 3 8.84 3 16c0 2.53.75 4.99 2.17 7.1L4 29l6.08-1.6A12.9 12.9 0 0 0 16.02 29C23.2 29 29 23.16 29 16S23.2 3 16.02 3zm0 23.52c-2.07 0-4.1-.55-5.88-1.6l-.42-.25-3.61.95.96-3.52-.27-.45A10.55 10.55 0 0 1 5.47 16c0-5.82 4.74-10.55 10.55-10.55S26.57 10.18 26.57 16 21.84 26.52 16.02 26.52z"/></svg>
   </a>
 
   <script src="static/js/site.js"></script>
